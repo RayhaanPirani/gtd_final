@@ -98,7 +98,7 @@ def attacks_by_dates(self, con, start, end, map=False):
                         f_out.write(strarr)
                     f_out.write(line)
         
-        print_to_output(self.textBrowser, "Map generated.'.")
+        print_to_output(self.textBrowser, "Map generated.")
         return
 
     print_output = ''
