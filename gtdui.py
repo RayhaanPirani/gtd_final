@@ -204,9 +204,19 @@ class Ui_MainWindow(object):
         self.pushButton_9.setText(_translate("MainWindow", "Close app"))
 
 if __name__ == "__main__":
+    import ctypes
+    myappid = u'rayhaan.gtd.v1.00'
+    ctypes.windll.shell32.SetCurrentProcessExplicitAppUserModelID(myappid)
     import sys
     app = QtWidgets.QApplication(sys.argv)
     MainWindow = QtWidgets.QMainWindow()
+    app_icon = QtGui.QIcon()
+    app_icon.addFile('icon-16.png', QtCore.QSize(16,16))
+    app_icon.addFile('icon-24.png', QtCore.QSize(24,24))
+    app_icon.addFile('icon-32.png', QtCore.QSize(32,32))
+    app_icon.addFile('icon-48.png', QtCore.QSize(48,48))
+    app_icon.addFile('icon-256.png', QtCore.QSize(256,256))
+    app.setWindowIcon(app_icon)
     app.setStyleSheet(qdarkstyle.load_stylesheet_pyqt5())
     ui = Ui_MainWindow()
     ui.setupUi(MainWindow)
