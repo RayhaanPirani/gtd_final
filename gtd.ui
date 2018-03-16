@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QTextBrowser" name="textBrowser">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>390</y>
+      <width>781</width>
+      <height>201</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QGroupBox" name="groupBox">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>60</y>
+      <width>371</width>
+      <height>201</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>Actions</string>
+    </property>
+    <widget class="QPushButton" name="pushButton">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>20</y>
+       <width>351</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>List the countries with the most terror attacks</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_3">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>50</y>
+       <width>351</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Visualize the countries with the most terror attacks</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_4">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>80</y>
+       <width>351</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>List the countries with the highest casualties</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_5">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>110</y>
+       <width>351</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>List countries with events between specified dates</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_6">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>140</y>
+       <width>351</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Locate countries with events between specified dates</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_8">
+     <property name="geometry">
+      <rect>
+       <x>180</x>
+       <y>170</y>
+       <width>181</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Show world map</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_7">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>170</y>
+       <width>171</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Show word cloud</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="groupBox_2">
+    <property name="geometry">
+     <rect>
+      <x>390</x>
+      <y>10</y>
+      <width>401</width>
+      <height>371</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>Visualization</string>
+    </property>
+    <widget class="QWebEngineView" name="widget" native="true">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>20</y>
+       <width>371</width>
+       <height>341</height>
+      </rect>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="groupBox_3">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>371</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>Load file</string>
+    </property>
+    <widget class="QPushButton" name="pushButton_2">
+     <property name="geometry">
+      <rect>
+       <x>290</x>
+       <y>20</y>
+       <width>75</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Load file</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineEdit">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>20</y>
+       <width>271</width>
+       <height>20</height>
+      </rect>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>370</y>
+      <width>46</width>
+      <height>13</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Status</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_9">
+    <property name="geometry">
+     <rect>
+      <x>160</x>
+      <y>300</y>
+      <width>71</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Close app</string>
+    </property>
+   </widget>
+   <zorder>groupBox_3</zorder>
+   <zorder>groupBox_2</zorder>
+   <zorder>groupBox</zorder>
+   <zorder>textBrowser</zorder>
+   <zorder>label</zorder>
+   <zorder>pushButton_9</zorder>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>QWebEngineView</class>
+   <extends>QWidget</extends>
+   <header location="global">QWebEngineView</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>
